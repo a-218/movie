@@ -1,37 +1,16 @@
+import React, { Component } from 'react';
+import Movies from './components/movies';
 
-function Greetings() {
-  return (
-    <div className="Greetings">
-      <h2>Hello world </h2>
-      <LoginButton />
-      <LogoutButton />
-    </div>
+class App extends Component {
 
+  render() {
+    return (
+      <main className="container">
 
-  );
+        <Movies />
+      </main>
+    );
+  }
 }
 
-
-const Person = () => {
-  return (
-    <p>this is message</p>);
-
-};
-
-
-function LoginButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      Login
-    </button>
-  );
-}
-
-function LogoutButton(props) {
-  return (
-    <button onClick={props.onClick}>
-      Logout
-    </button>
-  );
-}
-export default Greetings;
+export default App;
