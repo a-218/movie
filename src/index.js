@@ -6,9 +6,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Counter from './components/counter'
 import 'font-awesome/css/font-awesome.css'
 import './index.css'
+import Movies from './components/movies';
 ReactDOM.render(
 
-  <App />,
+  <Movies />,
 
   document.getElementById('root')
 );
